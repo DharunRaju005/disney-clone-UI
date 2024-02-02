@@ -43,7 +43,7 @@ const Header=(props)=>{
             })
             .catch((err)=>alert(err.message));
         }
-        }
+    }
 
     const setUser=(user)=>{
         dispatch(
