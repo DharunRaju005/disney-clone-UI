@@ -4,6 +4,7 @@ import Login from "./components/Login";
 import './App.css';
 import Header from "./components/Header";
 import Home from "./components/Home";
+import Detail from './components/Details';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           {/* Use the `element` prop instead of `children` */}
           <Route path="/" element={<Login />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/detail/:id" element={<Detail />}></Route>
         </Routes>
       </Router>
     </div>
