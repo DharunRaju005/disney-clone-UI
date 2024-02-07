@@ -127,7 +127,7 @@ const Nav=styled.nav`
 const Logo=styled.a`
     padding:0;
     width:80px;
-    margin-top:4px
+    margin-top:4px;
     max-height:70px;
     font-size:0;
     display:inline-block;
@@ -182,8 +182,8 @@ const NavMenu=styled.div`
                 right:0px;
                 transform-origin:left center;
                 transform:scaleX(0);
-                transition:all 250ms cubic-bezier(.25,0.46,0.45,0.94);
-                visibilty:hidden;
+                transition:all 250ms cubic-bezier(.25,0.46,0.45,0.94) 0s;
+                visibility: hidden;
                 width:auto;
             }
         }
@@ -198,9 +198,9 @@ const NavMenu=styled.div`
 
     }
 
-    // @media (max-width:768px){
-    //     display:none;
-    // }
+    @media (max-width:768px){
+        display:none;
+    }
 
     `
 

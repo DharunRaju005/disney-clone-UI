@@ -7,7 +7,6 @@ import { getDoc, doc } from "firebase/firestore";
 const Detail = (props) => {
   const { id } = useParams();
   const [detailData, setDetailData] = useState({});
-  console.log(id);
 
   useEffect(() => {
     const fetchMovieDetails = async () => {
